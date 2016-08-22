@@ -53,22 +53,22 @@ def cubic_list(data):
 def calc_hypotenuse(x, y):
     import math
     hypotenuse = math.sqrt(x**2 + y**2)
-    print(hypotenuse)
+    return(hypotenuse)
 
 
 # 底辺x,斜辺vの直角三角形の残り1つの辺の長さを返してください
 def calc_subtense(x, v):
     import math
     subtense = abs(x**2 - v**2)
-    print(math.sqrt(subtense))
+    return (math.sqrt(subtense))
 
 
 # 三辺の長さがそれぞれx,y,zの三角形の面積を返してください
 def calc_area_triangle(x, y, z):
     import math
     s = (x+y+z) / 2
-    T = abs(s*(s-x)*(s-y)*(s-z))
-    print(math.sqrt(T))
+    T = s*(s-x)*(s-y)*(s-z)
+    return (math.sqrt(T))
 
 
 # 引数a,b,cを小数点以下2桁表示で空白切りで表示してください
@@ -83,12 +83,12 @@ def point_two_digits(a, b, c):
 # リストdataの内容を小さい順でソートした結果を返してください
 def list_sort(data):
     data.sort()
-    print(data)
+    return (data)
 
 
 # 文字列の並びを逆にしたものを返してください
 def reverse_string(sentence):
-    print(sentence[::-1])
+    return sentence[::-1]
 
 
 # dateから2016年4月1日までの日数を返してください
@@ -96,9 +96,9 @@ def days_from_date(date):
     import datetime
 
     now = datetime.date(2016, 4, 1)
-    past = datetime.date(date)
+    past = datetime.date()
 
-    print(now-past)
+    return (now-past)
 
 
 
