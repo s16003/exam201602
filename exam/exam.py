@@ -45,8 +45,12 @@ def factorial(number):
 
 # リストdataの各要素(整数)を3乗した結果をリスト型として返してください
 def cubic_list(data):
+    a = []
     for x in range(len(data)):
-        print(data[x]**3)
+        b = [data[x] ** 3]
+        a = a+b
+
+    return a
 
 
 # 底辺x,高さyの直角三角形(right angled triangle)の残り1つの辺の長さを返してください
